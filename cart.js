@@ -44,7 +44,7 @@ function readCart(cart) {
     `;
   });
   showCartBadge();
-  document.querySelector("#cart-footer").innerHTML += `
+  document.querySelector("#cart-footer").innerHTML = `
     <h3>Total cost: R${total}</h3>
     <button class="btn btn-danger btn-lg" onclick="checkout()">
       Checkout
